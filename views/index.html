@@ -14,8 +14,8 @@
         <h2>API Project: URL Shortener Microservice</h2>
         <h3>User Story: </h3>
         <ol>
-          <li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
-          <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
+          <li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":2}</code></li>
+          <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"Invalid":"URL is invalid"}</code><br>
           HINT: to be sure that the submitted url points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the <code>dns</code> core module.</li>
           <li>When I visit the shortened URL, it will redirect me to my original link.</li>
         </ol>
@@ -26,21 +26,21 @@
         </p>
         <form action="api/shorturl/new" method="POST">
           <label for="url_input">URL to be shortened</label>
-          <input id="url_input" type="text" name="url" value="https://www.freecodecamp.org">
+          
+          <input id="url_input" type="text" name="url">
+
           <input type="submit" value="POST URL">
         </form>
         <h3>Example Usage:</h3>
-        <a href="https://thread-paper.glitch.me/api/shorturl/3">
-          [this_project_url]/api/shorturl/3
-        </a>
-
+        <h4> <a href="https://wide-spear.glitch.me/api/shorturl/1"> https://wide-spear.glitch.me/api/shorturl/1  </a> </h4>
         <h3>Will Redirect to:</h3>
-        <p>https://www.freecodecamp.org/forum/</p>
+        <p>https://www.freecodecamp.org/</p>
       </div>
       <div class="footer">
         <p>
-          by <a href="https://www.freecodecamp.org">freeCodeCamp</a>
+          by <a href="https://www.freecodecamp.org/freedom41"> Mark Mascarenhas</a>
         </p>
+        <p> As a project from <a href="www.freecodecamp.org"> Freecodecamp </a></p>
       </div>
    </body>
 
